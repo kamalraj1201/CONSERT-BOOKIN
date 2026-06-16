@@ -69,14 +69,14 @@ export function Footer() {
           <div>
             <h4 className="font-display font-bold mb-4">Follow Us</h4>
             <div className="flex gap-3">
-              <a href="https://www.youtube.com/watch?v=C7sBloyN42I" className="p-2 rounded-lg bg-muted hover:bg-primary/20 transition-colors group">
+              <a href="#" className="p-2 rounded-lg bg-muted hover:bg-primary/20 transition-colors group">
                <Instagram className="h-5 w-5 text-muted-foreground group-hover:text-primary"/>
                 
               </a>
               <a href="#" className="p-2 rounded-lg bg-muted hover:bg-primary/20 transition-colors group">
                 <Twitter className="h-5 w-5 text-muted-foreground group-hover:text-primary"/>
               </a>
-              <a href="#" className="p-2 rounded-lg bg-muted hover:bg-primary/20 transition-colors group">
+              <a href="https://www.youtube.com/results?search_query=how+to+deploy+in+github" className="p-2 rounded-lg bg-muted hover:bg-primary/20 transition-colors group">
                 <Youtube className="h-5 w-5 text-muted-foreground group-hover:text-primary"/>
               </a>
               <a href="#" className="p-2 rounded-lg bg-muted hover:bg-primary/20 transition-colors group">

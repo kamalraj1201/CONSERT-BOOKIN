@@ -111,7 +111,7 @@ const MyBookingsPage = () => {
 
                       <div>
                         <span className="font-bold text-primary">
-                          ₹ {booking.totalAmount}
+                          ₹{booking.totalAmount}
                         </span>
                       </div>
                     </div>

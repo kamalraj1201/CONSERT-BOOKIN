@@ -126,7 +126,7 @@ const ConcertDetails = () => {
         <div>
           <Card>
             <CardContent className="p-6 space-y-6">
-              <h2 className="text-3xl font-bold">${concert.price}</h2>
+              <h2 className="text-3xl font-bold">₹{concert.price}</h2>
 
               {selectedSeats.length === 0 && (
                 <div className="flex gap-3 items-center">

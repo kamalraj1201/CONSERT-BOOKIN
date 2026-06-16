@@ -115,7 +115,7 @@ const BookingPage = () => {
                 </div>
                 <div className="flex justify-between font-bold">
                   <span>Total Paid</span>
-                  <span>${totalPrice.toFixed(2)}</span>
+                  <span>₹{totalPrice.toFixed(2)}</span>
                 </div>
               </CardContent>
             </Card>
@@ -211,7 +211,7 @@ const BookingPage = () => {
 
               <div className="flex justify-between font-bold">
                 <span>Total</span>
-                <span>${totalPrice.toFixed(2)}</span>
+                <span>₹{totalPrice.toFixed(2)}</span>
               </div>
             </CardContent>
           </Card>

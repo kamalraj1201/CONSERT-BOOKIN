@@ -191,7 +191,7 @@ const BookingPage = () => {
                 >
                   {isProcessing
                     ? "Processing..."
-                    : `Confirm Booking - $${totalPrice.toFixed(2)}`}
+                    : `Confirm Booking - ₹${totalPrice.toFixed(2)}`}
                 </Button>
               </form>
             </CardContent>

@@ -9,7 +9,7 @@ const app = express();
 
 /* 🔥 STRONG CORS FIX */
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:8080"
+  res.header("Access-Control-Allow-Origin", "http://localhost:8080",
             "http://localhost:5173",
     "https://consert-bookin-8yno13dsu-kamalrajs-projects-e8337ecd.vercel.app");
   res.header(

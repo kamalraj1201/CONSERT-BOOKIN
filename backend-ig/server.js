@@ -6,9 +6,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
-/* 🔥 STRONG CORS FIX */
-const cors = require("cors");
 
+/* CORS */
 app.use(
   cors({
     origin: [
@@ -17,18 +16,20 @@ app.use(
       "https://consert-bookin.vercel.app",
       "https://consert-bookin-8yno13dsu-kamalrajs-projects-e8337ecd.vercel.app"
     ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     credentials: true
   })
 );
 
-/* 🔥 CONNECT MONGODB */
+app.use(express.json());
+
+/* CONNECT MONGODB */
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
-/* 🔥 ROUTES */
+/* ROUTES */
 app.use("/api/users", require("./routes/userRoutes"));
 app.use("/api/concerts", require("./routes/concertRoutes"));
 app.use("/api/bookings", require("./routes/bookingRoutes"));

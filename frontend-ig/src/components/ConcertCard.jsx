@@ -20,7 +20,7 @@ export function ConcertCard({ concert, featured = false }) {
 
         {/* Price Badge */}
         <span className="absolute top-3 right-3 px-3 py-1 text-sm font-bold rounded-full bg-card/90 backdrop-blur-sm text-foreground border border-border/50">
-          ${concert.price}
+          ₹{concert.price}
         </span>
       </div>
 
